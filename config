@@ -1,0 +1,25 @@
+# wi configuration
+# Installed to ~/.config/wi/config (or $XDG_CONFIG_HOME/wi/config).
+# Lines starting with '#' or ';' are ignored.
+
+# Wikipedia language. May be overridden with -l.
+language = ru
+
+# API endpoint. The first %s is replaced by the language.
+# If there is no %s, the language setting only affects nothing.
+api = https://%s.wikipedia.org/w/api.php
+
+# Sent as the HTTP User-Agent. Wikipedia requires a descriptive one.
+user_agent = wi/1.0 (suckless wikipedia reader)
+
+# Wrap width in terminal columns. 0 = detect terminal width.
+width = 0
+
+# Network timeout in seconds.
+timeout = 15
+
+# Print the article title before the text: 1 = yes, 0 = no.
+title = 1
+
+# Only show the lead section: 1 = yes, 0 = no.
+intro = 0
